@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 600px;
+    background: rgba(255, 249, 249, 0.911);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hidden{
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button{
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-container{
+    margin: .5rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message span{
+    font-size: 28px;
+}
+
+.equation span{
+    margin: 0 1rem;
+}
+
+.true{
+    background-color: green;
+}
+
+.false{
+    background-color: red;
+}
+
+.next{
+    background-color: blue;
 }
